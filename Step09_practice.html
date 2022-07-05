@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step09_practice.html</title>
+</head>
+<style>
+    textarea{
+        width: 50%;
+        height: 300px;
+        
+    }
+</style>
+<body>
+    <h1>회원가입 폼 연습</h1>
+    <form action="signup.jsp">
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력해 주세요">
+        <label for="pwd">비밀번호</label>
+        <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해 주세요">
+         
+        <fieldset>
+            <legend>성별 선택</legend>
+            <label>
+                <input type="radio" name="gender" value="man"> 남자
+                <input type="radio" name="gender" value="woman"> 여자
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>취미 선택</legend>
+            <label>
+                <input type="checkbox" name="hobby" value="reading">독서
+                <input type="checkbox" name="hobby" id="bascketball">농구
+                <input type="checkbox" name="hobby" id="movie">영화보기
+                <input type="checkbox" name="hobby" id="etc" checked>기타
+            </label>
+        </fieldset>
+
+        <label for="job">직업선택</label>
+        <select name="job" id="job">
+            <option value="" selected>선택</option>
+            <option value="cook">요리사</option>
+            <option value="programmer">프로그래머</option>
+            <option value="teacher">선생님</option>
+            <option value="student">학생</option>
+        </select>
+        <br>
+        <label for="birthdate">생년월일</label>
+        <input type="date" name="birthdate" id="birthdate">
+        <br>
+
+        <label for="comment">자기소개</label><br>
+        <textarea name="comment" id="comment">하고 싶은 말</textarea>
+        <br>
+        <label for="myFile">첨부파일</label>
+        <input type="file" name="myFile" id="myFile">
+        
+        <button type="submit">가입하기</button>
+        <button type="reset">취소</button>
+    </form>
+</body>
+</html>
